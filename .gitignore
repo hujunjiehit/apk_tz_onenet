@@ -39,4 +39,5 @@ captures/
 # Keystore files
 *.jks
 
-.settings/
+org.eclipse.jdt.core.prefs
+
