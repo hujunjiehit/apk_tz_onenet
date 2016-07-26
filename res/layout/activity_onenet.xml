@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bj" >
+
+    <TextView
+        android:id="@+id/tv_farway"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="@string/onenetview"
+        android:textColor="@color/green"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/onenet_connect"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_farway"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="@string/connectonenet" />
+
+    <Button
+        android:id="@+id/onenet_light_on"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/onenet_connect"
+        android:layout_centerHorizontal="true"
+        android:text="@string/onenetlighton" />
+
+    <Button
+        android:id="@+id/onenet_light_off"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/onenet_light_on"
+        android:layout_centerHorizontal="true"
+        android:text="@string/onenetlightoff" />
+
+    <Button
+        android:id="@+id/onenet_restart"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/onenet_light_off"
+        android:layout_centerHorizontal="true"
+        android:text="@string/onenetrestart" />
+
+    <Button
+        android:id="@+id/onenet_query"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/onenet_restart"
+        android:layout_centerHorizontal="true"
+        android:text="@string/onenetquery" />
+
+    <Button
+        android:id="@+id/onenet_disconnect"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/onenet_query"
+        android:layout_centerHorizontal="true"
+        android:text="@string/disconnectonenet" />
+
+    <TextView
+        android:id="@+id/tv_connect_devid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/onenet_disconnect"
+        android:layout_marginTop="33dp"
+        android:layout_toLeftOf="@+id/onenet_query"
+        android:text="@string/onenetdevid"
+        android:textColor="@color/green"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/ed_connect_devID"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:layout_alignBaseline="@+id/tv_connect_devid"
+        android:layout_alignBottom="@+id/tv_connect_devid"
+        android:layout_centerHorizontal="true"
+        android:ems="8"
+        android:hint="@string/enterdevID"
+        android:inputType="number"
+        android:textSize="12sp" />
+
+</RelativeLayout>

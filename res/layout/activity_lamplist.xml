@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bj"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="top|center"
+        android:background="@drawable/bj" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/help"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:src="@drawable/help"
+                android:clickable="true" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/telelogo"
+                android:textColor="#6BD50D"
+                android:textSize="22sp" />
+
+            <ImageView
+                android:id="@+id/shuaxin"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:src="@drawable/shuaxin" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="" 
+            android:textColor="#ff0000"/>
+
+        <TextView
+            android:id="@+id/gsinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:text="TextView" 
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center_horizontal|center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/controlcenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#eee"
+            android:onClick="true"
+            android:text="@string/cofig_center_offline" 
+            android:textSize="@dimen/activity_vertical_fontsize"/>
+
+        <TextView
+            android:id="@+id/pz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cofig_label"
+            android:textColor="#e999"
+            android:onClick="true"
+            android:textAppearance="?android:attr/textAppearanceMedium" 
+            android:layout_marginLeft="10dp"
+             />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:textColor="#fff" >
+
+        <GridView
+            android:id="@+id/gridView1"
+            android:layout_width="match_parent"
+            android:layout_height="347dp"
+            android:layout_margin="20dp"
+            android:layout_marginBottom="80dp"
+            android:columnWidth="80dp"
+            android:gravity="center"
+            android:horizontalSpacing="10dp"
+            android:numColumns="auto_fit"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="10dp" >
+        </GridView>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/dingshi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/show_alltimer_setting"
+            android:textColor="#fff"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </RelativeLayout>
+
+</LinearLayout>

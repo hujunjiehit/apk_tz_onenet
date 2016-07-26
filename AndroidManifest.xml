@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tele.control"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/lamp1"
+        android:label="@string/app_name"
+        android:name="com.tianzun.control.MyApplication"
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
+
+        <activity
+            android:name="com.tianzun.control.MainActivity"
+            android:configChanges="keyboardHidden|orientation|locale"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.tianzun.control.ActivityOnenet"
+            android:configChanges="locale"
+            android:launchMode="singleTask" >
+        </activity>
+        
+        <activity
+            android:name="com.tianzun.control.ActivitySign"
+            android:configChanges="locale"
+            android:launchMode="singleTask" >
+        </activity>
+        
+        <activity
+            android:name="com.tianzun.control.ActivityTest"
+            android:configChanges="locale"
+            android:launchMode="singleTask" >
+        </activity>
+        
+<!--         <activity
+            android:name="com.tianzun.control.MainActivity"
+            android:configChanges="locale"
+            android:launchMode="singleTask" >
+        </activity> -->
+        
+        <activity
+            android:name="com.tianzun.control.DialogWifiMenu"
+            android:configChanges="locale"
+            android:launchMode="singleTask"
+            android:theme="@style/bottom_menu_dialog" >
+        </activity>
+        
+        <activity
+            android:name="com.tianzun.control.ActivityWifiConfig"
+            android:configChanges="locale"
+            android:launchMode="singleTask" >
+        </activity>
+        
+        <activity
+            android:name="com.tianzun.control.ActivityLampList"
+            android:configChanges="locale"
+            android:launchMode="singleTask" >
+        </activity>
+        
+        <activity
+            android:name="com.tianzun.control.ActivityLampAdd"
+            android:configChanges="locale"
+            android:launchMode="singleTask" >
+        </activity>
+        
+        <activity
+            android:name="com.tianzun.control.ActivityColorpicker"
+            android:configChanges="locale"
+            android:launchMode="singleTask" >
+        </activity>
+        
+        <activity
+            android:name="com.tianzun.control.ActivityCT"
+            android:configChanges="locale"
+            android:launchMode="singleTask" >
+        </activity>
+        
+        <activity
+            android:name="com.tianzun.control.ActivityJDList"
+            android:configChanges="locale"
+            android:launchMode="singleTask" >
+        </activity>
+        
+        <activity
+            android:name="com.tianzun.control.ActivityJDAdd"
+            android:configChanges="locale"
+            android:launchMode="singleTask" >
+        </activity>
+        
+        <activity
+            android:name="com.tianzun.control.TimeActivity"
+            android:configChanges="locale"
+            android:launchMode="singleTask" >
+        </activity>
+        
+        <activity
+            android:name="com.tianzun.control.AllTimeActivity"
+            android:configChanges="locale"
+            android:launchMode="singleTask" >
+        </activity>
+        
+        <activity
+            android:name="com.tianzun.control.AutoActivity"
+            android:configChanges="locale"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        
+        <activity
+            android:name="com.tianzun.iot.activity.SmartconfigActivity"
+            android:configChanges="locale"
+            android:launchMode="singleTask" >
+        </activity>
+        
+
+        <receiver
+            android:name="com.tianzun.control.AlarmReceiver"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="android.alarm.demo.action" />
+            </intent-filter>
+        </receiver>
+        
+        <receiver android:name="com.tianzun.control.BootReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        
+       <service  
+            android:name="com.tianzun.control.HeartbeatService"  
+            android:label="QServer"  
+            android:persistent="true" >  
+            <intent-filter>  
+                <action android:name="HeartbeatService" />  
+            </intent-filter>  
+       </service>  
+    </application>
+
+</manifest>

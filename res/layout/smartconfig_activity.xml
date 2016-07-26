@@ -1,0 +1,268 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bj" >
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/headbj" >
+
+        <!-- 顶部 -->
+
+        <Button
+            android:id="@+id/btn_wifi_config_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/headbj"
+            android:paddingLeft="20dp"
+            android:text="@string/back"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:singleLine="true"
+            android:text="@string/deviceconfig"
+            android:textColor="#6BD50D"
+            android:textSize="20sp" />
+
+		<Button
+		    android:id="@+id/btn_wifi_config_clear"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+		    android:background="@drawable/headbj"
+		    android:paddingRight="20dp"
+		    android:visibility="gone"
+		    android:text="@string/clearconfig"
+		    android:textColor="#ffffff"
+		    android:textSize="15sp"
+		    android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <!-- 配置wifi界面 -->
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_top"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" >
+
+        <RelativeLayout
+            android:id="@+id/rl_wifi_config_tip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp" >
+
+            <!-- wifi名称 -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:singleLine="true"
+                android:text="@string/cofig_center"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <!-- 填写wifi信息 -->
+
+        <LinearLayout
+            android:id="@+id/rl_wifi_config_ssid"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/rl_wifi_config_tip"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal" >
+
+            <!-- wifi名称 -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:text="@string/wifi_account"
+                android:textColor="#808080"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+            <!-- 密码 -->
+
+            <Spinner android:id="@+id/sp_wifi_config_router_list" 
+				        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+       					android:background="@null"
+                        android:singleLine="true"
+                        android:cursorVisible="false"/>
+<!--             <TextView
+                android:id="@+id/tvApSssidConnected"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:textColor="#808080"
+                android:singleLine="true"
+                android:textSize="24sp" >
+            </TextView> -->
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rl_wifi_config_password"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/rl_wifi_config_ssid"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_vertical|center"
+            android:orientation="horizontal" >
+
+            <!-- wifi名称 -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/wifi_password"
+                android:textColor="#808080"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <!-- 密码 -->
+
+            <EditText
+                android:id="@+id/edtApPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:cursorVisible="true"
+                android:inputType="textPassword"
+                android:textColor="#0087d1"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/eye_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/eye" />
+        </LinearLayout>
+
+          <LinearLayout
+       android:id="@+id/checkbox"                 
+       android:layout_below="@+id/rl_wifi_config_password"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_marginBottom="15dp" >
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="10dp"
+           android:text="@string/wifi_password"
+           android:textColor="#808080"
+           android:textSize="15dp"
+           android:textStyle="bold"
+           android:visibility="invisible" />
+
+       <CheckBox
+           android:id="@+id/checkBox1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textColor="#C0C0C0"
+           android:text="@string/rember_password" />
+   </LinearLayout>
+             
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_wifi_config_password"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/switchIsSsidHiddenTitle"
+                android:textColor="#808080"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+<!--             <Switch
+                android:id="@+id/switchIsSsidHidden"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp" /> -->
+        </LinearLayout>
+        
+<!--     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp" 
+        android:gravity="center_vertical"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textColor="#808080"
+            android:text="@string/spinnerTaskResultCountTitle"
+            android:textSize="15sp" />
+        
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+        
+        <Spinner
+            android:id="@+id/spinnerTaskResultCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#808080"
+            />
+    </LinearLayout> -->
+
+
+    </RelativeLayout>
+
+    <com.tianzun.clientview.RoundProgressView
+        android:id="@+id/rpv_wifi_config_ok"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_marginTop="19dp" />
+
+</RelativeLayout>

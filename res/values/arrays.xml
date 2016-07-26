@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="jdonline">
+        <item>ref_1</item>
+        <item>pc_1</item>
+        <item>tv_1</item>
+        <item>fan_1</item>
+        <item>air_1</item>
+        <item>heater_1</item>
+        <item>vacuum_1</item>
+        <item>washer_1</item>
+        <item>audio_1</item>
+    </string-array>
+    
+        <string-array name="jdoffline">
+        <item>ref_0</item>
+        <item>pc_0</item>
+        <item>tv_0</item>
+        <item>fan_0</item>
+        <item>air_0</item>
+        <item>heater_0</item>
+        <item>vacuum_0</item>
+        <item>washer_0</item>
+        <item>audio_0</item>
+    </string-array>
+    
+    <string-array name="lamponline">
+        <item>living_1</item>
+        <item>sleep_1</item>
+        <item>book_1</item>
+        <item>kichen_1</item>
+        <item>wc_1</item>
+        <item>balcony_1</item>
+
+    </string-array>
+    
+        <string-array name="lampoffline">
+        <item>living_0</item>
+        <item>sleep_0</item>
+        <item>book_0</item>
+        <item>kichen_0</item>
+        <item>wc_0</item>
+        <item>balcony_0</item>
+    </string-array>
+</resources>

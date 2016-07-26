@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main"
+    android:gravity="top|center"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/zhaomingclick"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="160dp"
+        android:background="@drawable/textview_radius"
+        android:text="@string/Lamp_con"
+          android:textSize="24sp" 
+          android:gravity="center"
+          android:textColor="#ffffff"
+        android:onClick="true" />
+
+    <TextView
+        android:id="@+id/jiadianclick"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+             android:textColor="#ffffff"
+        android:background="@drawable/textview_radius"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:text="@string/Appliances"
+        android:onClick="true" />
+     
+     <TextView
+        android:id="@+id/signclick"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+       	android:textColor="#ffffff"
+        android:background="@drawable/textview_radius"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:text="@string/action_sign"
+        android:onClick="true" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/languageEnglish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:text="@string/English"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/languageChinese"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="80dp"
+            android:clickable="true"
+            android:text="@string/Chinese"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</LinearLayout>

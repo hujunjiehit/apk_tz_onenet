@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bj" >
+
+    <TextView
+        android:id="@+id/tv_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp"
+        android:text="@string/testview"
+        android:textColor="#0fffff" />
+
+    <Button
+        android:id="@+id/btn_lightTD"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_lightTI"
+        android:layout_alignBottom="@+id/btn_lightTI"
+        android:layout_alignLeft="@+id/btn_lightLD"
+        android:text="@string/lightTD" />
+
+    <Button
+        android:id="@+id/btn_modulerestart"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/btn_lightblue"
+        android:layout_below="@+id/btn_lightgreen"
+        android:text="@string/modulerestart" />
+
+    <Button
+        android:id="@+id/btn_lightred"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_lightstatus"
+        android:layout_alignLeft="@+id/btn_lightTI"
+        android:text="@string/lightred" />
+
+    <Button
+        android:id="@+id/btn_lightLI"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_lighton"
+        android:layout_below="@+id/btn_lighton"
+        android:text="@string/lightLI" />
+
+    <Button
+        android:id="@+id/btn_lightTI"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_lightLI"
+        android:layout_below="@+id/btn_lightLI"
+        android:text="@string/lightTI" />
+
+    <Button
+        android:id="@+id/btn_lightLD"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_lightLI"
+        android:layout_alignBottom="@+id/btn_lightLI"
+        android:layout_toRightOf="@+id/btn_lightgreen"
+        android:text="@string/lightLD" />
+
+    <Button
+        android:id="@+id/btn_lightgreen"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_lightTD"
+        android:layout_centerHorizontal="true"
+        android:text="@string/lightgreen" />
+
+    <Button
+        android:id="@+id/btn_lightstatus"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_lightTI"
+        android:layout_below="@+id/btn_lightgreen"
+        android:text="@string/lightstatus" />
+
+    <Button
+        android:id="@+id/btn_lightblue"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_modulerestart"
+        android:layout_alignRight="@+id/btn_lightTD"
+        android:text="@string/lightblue" />
+
+    <Button
+        android:id="@+id/btn_lighton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_light"
+        android:layout_alignBottom="@+id/btn_light"
+        android:layout_toLeftOf="@+id/btn_light"
+        android:text="@string/lighton" />
+
+    <Button
+        android:id="@+id/btn_light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_lightoff"
+        android:layout_alignBottom="@+id/btn_lightoff"
+        android:layout_centerHorizontal="true"
+        android:text="@string/lightparing" />
+
+    <Button
+        android:id="@+id/btn_lightoff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/btn_lightLD"
+        android:layout_below="@+id/tv_textview"
+        android:layout_marginTop="53dp"
+        android:text="@string/lightoff" />
+
+    <Button
+        android:id="@+id/btn_send_udp"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_modulerestart"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:text="@string/sendudpbrocast" />
+
+    <Button
+        android:id="@+id/btn_release"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_send_udp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:text="@string/clearudpconfig" />
+
+</RelativeLayout>
